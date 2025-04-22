@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif; /* Keep a readable sans-serif font */
+    background: #141414; /* Netflix dark background */
+    color: #e5e5e5; /* Netflix light gray text */
+    margin: 0; /* Reset default body margin */
+  }
+  
+  .container {
+    max-width: 1200px; /* Wider container for typical Netflix layout */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding around content */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically align items in the navbar */
+    background: #141414; /* Netflix dark background for navbar */
+    padding: 15px 20px; /* Adjust padding for better spacing */
+    color: white; /* White text for navbar elements */
+  }
+  
+  .navbar h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0; /* Remove default heading margin */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px; /* Space out the navigation links */
+  }
+  
+  .nav-links a {
+    color: #e5e5e5; /* Light gray for links */
+    text-decoration: none; /* Remove underlines */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #fff; /* White on hover */
+  }

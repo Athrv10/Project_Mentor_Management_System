@@ -1,0 +1,75 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark; /* Force dark mode */
+  color: #e5e5e5; /* Netflix light gray text */
+  background-color: #141414; /* Netflix dark background */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #fff; /* White links */
+  text-decoration: none; /* Remove underlines by default */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e50914; /* Netflix red on hover */
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #141414; /* Ensure body also has dark background */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff; /* White headings */
+  font-weight: bold; /* Typically bold in Netflix UI */
+}
+
+button {
+  border-radius: 5px; /* More rounded buttons */
+  border: none; /* Remove default borders */
+  padding: 0.8em 1.5em; /* Slightly more padding */
+  font-size: 1rem;
+  font-weight: bold; /* Bold button text */
+  font-family: inherit;
+  background-color: #e50914; /* Netflix red button */
+  color: #fff; /* White button text */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b81d24; /* Darker red on hover */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid #fff; /* White outline for focus */
+  outline-offset: 2px;
+}
+
+/* Remove light mode preferences */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #e5e5e5;
+    background-color: #141414;
+  }
+  a:hover {
+    color: #e50914;
+  }
+  button {
+    background-color: #e50914;
+    color: #fff;
+  }
+}
